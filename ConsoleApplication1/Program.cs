@@ -17,9 +17,17 @@ namespace ConsoleApplication1
             //int speed = car.speed;  //访问非静态字段
             ////Car.tank  //访问静态字段 
             //Console.WriteLine(color);
-            car.OilMeter = 30; 
-            car.PlusOil();
-            car.PlusOil(60);
+            //car.OilMeter = 30; 
+            //car.PlusOil();
+            //car.PlusOil(60);
+            PhoneBook pb = new PhoneBook();
+            pb.Name = "jiaokng";
+            pb.Age = 21;
+            pb.Add = "hahah";
+            pb.Sex = '男';
+            pb.QQ = "1511111";
+            pb.Phone = "1589633";
+            pb.PrintInfo();
         }
         
     }
