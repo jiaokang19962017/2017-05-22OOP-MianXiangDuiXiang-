@@ -14,7 +14,24 @@ namespace ConsoleApplication1
         private readonly int tank = 100;  //汽车的油箱的容积
         private int oilMeter;     //汽车的油表
         private int speed;  //最高时速
+        private string[] style;// 定义一个数组类型的变量,存放汽车类型
 
+
+
+        public string this[int index]
+        {
+            get { return style[index]; }
+            set { style[index] = value; }
+        }
+        public Car()
+        {
+            style = new string[] { "跑车", "轿车", "SUV" };
+        }
+
+        public Car(string name)
+        {
+            Console.WriteLine(name);
+        }
         /*共有属性:外界可以直接访问并且赋值
          私有属性:外界不可访问,但是可以通过本类方法进行间接访问*/
         public string Color
