@@ -11,7 +11,15 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            
+            Car car = new Car();
+            //string color = car.GetInfo();//调用颜色方法取值
+
+            //int speed = car.speed;  //访问非静态字段
+            ////Car.tank  //访问静态字段 
+            //Console.WriteLine(color);
+            car.OilMeter = 30; 
+            car.PlusOil();
+            car.PlusOil(60);
         }
         
     }
